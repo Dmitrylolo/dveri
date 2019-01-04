@@ -1,0 +1,5 @@
+<div class="{{classname}}">
+	<span class="select{{size ? ' '+size : ' w-small'}}">
+		<select ng-model="ngModel" ng-options="o.val as o.name for o in selectdata" ng-change="customfn()"></select>
+	</span>
+</div>

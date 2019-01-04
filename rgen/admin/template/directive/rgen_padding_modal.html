@@ -1,0 +1,68 @@
+<div class="rgen-model">
+	<div class="modal-header">
+		<h3 class="modal-title">Padding manager</h3>
+	</div>
+	<div class="modal-body">
+		<div class="rgen-form-wrp">
+			<rgen-onoff label="Status" data-ng-model="modaldata.status"></rgen-onoff>
+			<div ng-show="modaldata.status == true">
+				<rgen-radio radiodata="padding_types" label="Padding type" data-ng-model="modaldata.type"></rgen-radio>
+				<div data-ng-show="modaldata.type == 'all'">
+					<div class="field-box">
+						<label>Padding all</label>
+						<div class="fields">
+							<rgen-select type="alone" classname="inline" selectdata="paddingval_types" size="w-mini" data-ng-model="modaldata.pad_type"></rgen-select>
+							<span data-ng-show="modaldata.pad_type == 'int'">
+								<input type="text" class="form-field inline w-tiny" data-ng-model="modaldata.pad"> px
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<div data-ng-show="modaldata.type == 'dif'">
+					<div class="field-box">
+						<label>Padding top</label>
+						<div class="fields">
+							<rgen-select type="alone" classname="inline" selectdata="paddingval_types" size="w-mini" data-ng-model="modaldata.pad_t_type"></rgen-select>
+							<span data-ng-show="modaldata.pad_t_type == 'int'">
+								<input type="text" class="form-field inline w-tiny" data-ng-model="modaldata.pad_t"> px
+							</span>
+						</div>
+					</div>
+					<div class="field-box">
+						<label>Padding right</label>
+						<div class="fields">
+							<rgen-select type="alone" classname="inline" selectdata="paddingval_types" size="w-mini" data-ng-model="modaldata.pad_r_type"></rgen-select>
+							<span data-ng-show="modaldata.pad_r_type == 'int'">
+								<input type="text" class="form-field inline w-tiny" data-ng-model="modaldata.pad_r"> px
+							</span>
+						</div>
+					</div>
+					<div class="field-box">
+						<label>Padding bottom</label>
+						<div class="fields">
+							<rgen-select type="alone" classname="inline" selectdata="paddingval_types" size="w-mini" data-ng-model="modaldata.pad_b_type"></rgen-select>
+							<span data-ng-show="modaldata.pad_b_type == 'int'">
+								<input type="text" class="form-field inline w-tiny" data-ng-model="modaldata.pad_b"> px
+							</span>
+						</div>
+					</div>
+					<div class="field-box">
+						<label>Padding left</label>
+						<div class="fields">
+							<rgen-select type="alone" classname="inline" selectdata="paddingval_types" size="w-mini" data-ng-model="modaldata.pad_l_type"></rgen-select>
+							<span data-ng-show="modaldata.pad_l_type == 'int'">
+								<input type="text" class="form-field inline w-tiny" data-ng-model="modaldata.pad_l"> px
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<div class="modal-footer">
+		<button class="rgen-btn mediumlight" ng-click="apply()">Apply</button>
+		<button class="rgen-btn" ng-click="cancel()">Cancel</button>
+	</div>
+</div>

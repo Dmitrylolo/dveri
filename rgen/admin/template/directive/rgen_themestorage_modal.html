@@ -1,0 +1,68 @@
+<div class="rgen-model theme_storage_modal">
+	<div class="modal-header">
+		<h3 class="modal-title">Theme storage manager</h3>
+	</div>
+	<div class="modal-body">
+		<div class="alert alert-info">
+			<p>
+				Theme storage is backup utility to save theme settings. <br>
+				It gives freedom to experiment with theme customization options or creating multiple themes.
+			</p>
+			<p>
+				Theme storage only include sections which are listed under <strong>"THEME"</strong> menu.
+			</p>
+		</div>
+		
+		<section class="rgen-panel">
+			<h2 class="hd">Save all current settings with new name</h2>
+			<div class="panel-container">
+				<div class="rgen-form-wrp form-full">
+					<rgen-text label="Save with new name" data-ng-model="newtheme"></rgen-text>		
+					<div class="field-box" ng-if="permission">
+						<label></label>
+						<div class="fields">
+							<button class="rgen-btn small" ng-click="save_theme()">Save as new theme</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="rgen-panel" ng-if="themelist[0]">
+			<h2 class="hd">Manage existing theme settings</h2>
+			<div class="panel-container">
+				<div class="rgen-form-wrp form-full">
+
+					<div class="field-box">
+						<label>Select theme setting</label>
+						<div class="fields">
+							<span class="select w-medium">
+								<select data-ng-model="selected_theme" data-ng-options="o.id as o.name for o in themelist"></select>
+							</span>
+						</div>
+					</div>
+					
+					<div class="field-box" ng-if="permission">
+						<label>Load selected theme</label>
+						<div class="fields">
+							<button class="rgen-btn small" ng-click="load_theme(selected_theme)">Load selected theme</button>
+							<div class="help-text">Load selected theme settings on current settings. This process will overwrite all current settings with selected settings</div>
+						</div>
+					</div>
+					<div ng-show="selected_theme != 'theme_id_01'" ng-if="permission">
+						<div class="field-box">
+							<label>Remove selected theme</label>
+							<div class="fields">
+								<button class="rgen-btn small" ng-click="remove_theme(selected_theme)">Remove selected theme</button>
+								<div class="help-text">Remove selected theme settings</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div>
+	<div class="modal-footer">
+		<button class="rgen-btn" ng-click="cancel()">Cancel</button>
+	</div>
+</div>

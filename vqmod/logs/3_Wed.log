@@ -1,0 +1,28 @@
+---------- Date: 2017-03-29 17:59:30 ~ IP : 66.249.69.224 ----------
+REQUEST URI : /fort-fort.html?sort=pd.name&order=DESC
+MOD DETAILS:
+   modFile   : /home/dveri/public_html/vqmod/xml/mega_filter.xml
+   id        : Mega Filter PRO
+   version   : 1.5.x
+   vqmver    : 2.4.0
+   author    : marsilea15@gmail.com
+
+File Name    : catalog/view/theme/*/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): catalog/view/javascript/bootstrap/js/bootstrap.min.js
+----------------------------------------------------------------------
+
+
+---------- Date: 2017-03-29 18:07:39 ~ IP : 62.64.121.137 ----------
+REQUEST URI : /mezhkomnatnie-dveri/tehnicheskie-dveri/
+MOD DETAILS:
+   modFile   : /home/dveri/public_html/vqmod/xml/mega_filter.xml
+   id        : Mega Filter PRO
+   version   : 1.5.x
+   vqmver    : 2.4.0
+   author    : marsilea15@gmail.com
+
+File Name    : catalog/view/theme/*/template/product/category.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): echo $header; ?>
+----------------------------------------------------------------------
+
+

@@ -1,0 +1,110 @@
+<div class="rgen-model">
+	<div class="modal-header">
+		<h3 class="modal-title">Button manager</h3>
+	</div>
+	<div class="modal-body">
+		<div class="rgen-form-wrp">
+			<rgen-onoff label="Status" data-ng-model="modaldata.status"></rgen-onoff>
+			<div ng-show="modaldata.status == true">
+				<rgen-fonts ng-if="config.fonts == 1" label="Button fonts" buttonlabel="Edit" data-ng-model="modaldata.fonts"></rgen-fonts>
+				
+				<div class="field-box" ng-if="config.f_size == 1 || config.align == 1">
+					<label>Text settings</label>
+					<div class="fields">
+						<ul class="form-row">
+							<li ng-if="config.f_size == 1">
+								<label class="lbl">Text size</label>
+								<rgen-select type="alone" selectdata="font_size" size="w-mini" data-ng-model="modaldata.f_size"></rgen-select>
+							</li>
+							<li ng-if="config.align == 1">
+								<label class="lbl">Text align</label>
+								<rgen-radio type="alone" radiodata="alignment" label="Text align" data-ng-model="modaldata.text_align"></rgen-radio>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="field-box">
+					<label>Text color</label>
+					<div class="fields">
+						<ul class="form-row">
+							<li>
+								<label class="lbl">Normal</label>
+								<rgen-colorpicker type="alone" data-ng-model="modaldata.font_color.normal"></rgen-colorpicker>
+							</li>
+							<li>
+								<label class="lbl">Hover</label>
+								<rgen-colorpicker type="alone" data-ng-model="modaldata.font_color.hover"></rgen-colorpicker>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="field-box">
+					<label>Background</label>
+					<div class="fields">
+						<ul class="form-row">
+							<li>
+								<label class="lbl">Normal</label>
+								<rgen-colorpicker type="alone" data-ng-model="modaldata.background.normal"></rgen-colorpicker>
+							</li>
+							<li>
+								<label class="lbl">Hover</label>
+								<rgen-colorpicker type="alone" data-ng-model="modaldata.background.hover"></rgen-colorpicker>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="field-box">
+					<label>Border</label>
+					<div class="fields">
+						<ul class="form-row">
+							<li>
+								<label class="lbl">Normal</label>
+								<rgen-border type="alone" buttonlabel="Edit" data-ng-model="modaldata.border.normal"></rgen-border>
+							</li>
+							<li>
+								<label class="lbl">Hover</label>
+								<rgen-border type="alone" buttonlabel="Edit" data-ng-model="modaldata.border.hover"></rgen-border>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="field-box">
+					<label>Shadow</label>
+					<div class="fields">
+						<ul class="form-row">
+							<li>
+								<label class="lbl">Normal</label>
+								<rgen-shadow type="alone" buttonlabel="Edit" data-ng-model="modaldata.shadow.normal"></rgen-shadow>
+							</li>
+							<li>
+								<label class="lbl">Hover</label>
+								<rgen-shadow type="alone" buttonlabel="Edit" data-ng-model="modaldata.shadow.hover"></rgen-shadow>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="field-box">
+					<label>Other settings</label>
+					<div class="fields">
+						<ul class="form-row">
+							<li>
+								<label class="lbl">Padding</label>
+								<rgen-padding type="alone" buttonlabel="Edit" data-ng-model="modaldata.padding"></rgen-padding>
+							</li>
+							<li>
+								<label class="lbl">Margin</label>
+								<rgen-margin type="alone" buttonlabel="Edit" data-ng-model="modaldata.margin"></rgen-margin>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<div class="modal-footer">
+		<button class="rgen-btn mediumlight" ng-click="apply()">Apply</button>
+		<button class="rgen-btn" ng-click="cancel()">Cancel</button>
+	</div>
+</div>

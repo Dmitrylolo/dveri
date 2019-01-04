@@ -1,0 +1,5 @@
+User-agent: *
+
+Disallow: /admin
+Host: mg-dveri.com.ua
+Sitemap: http://mg-dveri.com.ua/sitemap.xml

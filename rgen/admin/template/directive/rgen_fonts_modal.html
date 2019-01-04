@@ -1,0 +1,136 @@
+<div class="rgen-model webfont">
+	<div class="modal-header">
+		<h3 class="modal-title">Font selector</h3>
+	</div>
+	<div class="modal-body">
+		<div class="rgen-form-wrp">
+			<rgen-onoff label="Font status" data-ng-model="fonts.status"></rgen-onoff>
+		</div>
+		<br>
+		<div ng-show="fonts.status == true">
+			<!-- <link href='//fonts.googleapis.com/css?family={{google_family_selected}}:{{variants_selected}}&subset={{subsets_selected}}' rel='stylesheet' type='text/css'> -->
+			<link ng-href="{{gurl}}" rel='stylesheet' type='text/css'>
+			<!-- <div class="font-preview" ng-style="
+				{ 
+					'font-family': fonts.family,
+					'font-size': fonts.size,
+					'font-style': fonts.style,
+					'font-weight': fonts.type == 'google' && variants_selected ? variants_selected.replace('italic','') : 'normal',
+					'color': fonts.color,
+					'text-transform': fonts.transform,
+					'letter-spacing': fonts.letter_spacing+'px'
+				} ;
+			"> -->
+			<div class="font-preview" style="{{fonts.css+'color:'+fonts.color+';'}}">
+				Grumpy wizards make toxic brew for the evil Queen and Jack.
+			</div>
+
+			<section class="rgen-panel">
+				<h2 class="hd">Font family</h2>
+				<div class="panel-container">
+					<div class="rgen-form-wrp form-full">
+						<rgen-radio radiodata="font_types" label="Font type" data-ng-model="fonts.type" ng-mouseleave="update()"></rgen-radio>
+						<div ng-show="fonts.type == 'default'">
+							<div class="field-box">
+								<label>Fonts family</label>
+								<div class="fields">
+									<span class="select inline w-medium">
+										<select data-ng-model="default_family_selected" data-ng-options="o.val as o.name for o in default_family" data-ng-change="default_family_change()"></select>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div ng-show="fonts.type == 'google'">
+							<div class="field-box">
+								<label>Fonts family</label>
+								<div class="fields">
+									<span class="select inline w-medium">
+										<select data-ng-model="google_family_selected" data-ng-options="o.val as o.name for o in google_family" data-ng-change="family_change()"></select>
+									</span>
+								</div>
+							</div>
+							<div class="field-box">
+								<label>Variant and Subset</label>
+								<div class="fields">
+									<ul class="form-row">
+										<li>
+											<label class="lbl">Subsets</label>
+											<span class="select w-small">
+												<select data-ng-model="subsets_selected" data-ng-options="o.val as o.name for o in subsets" data-ng-change="update()"></select>
+											</span>
+										</li>
+										<li>
+											<label class="lbl">Variants</label>
+											<span class="select w-small">
+												<select data-ng-model="variants_selected" data-ng-options="o.val as o.name for o in variants" data-ng-change="update()"></select>
+											</span>
+										</li>
+									</ul>
+									<div class="help-text">Select => 'Fonts style' <= italic if variants use with italic to apply style on preview</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="rgen-panel" ng-click="update()">
+				<h2 class="hd">Other font settings</h2>
+				<div class="panel-container">
+					<div class="rgen-form-wrp form-full">
+						<div class="field-box">
+							<label>Size, line height and letter spacing</label>
+							<div class="fields">
+								<ul class="form-row">
+									<li>
+										<label class="lbl">Font size</label>
+										<rgen-select type="alone" selectdata="font_size" size="w-mini" data-ng-model="fonts.size" ng-click="update()"></rgen-select>
+									</li>
+									<li>
+										<label class="lbl">Line height</label>
+										<rgen-select type="alone" selectdata="line_height" size="w-mini" data-ng-model="fonts.line_height" ng-click="update()"></rgen-select>
+									</li>
+									<li>
+										<label class="lbl">Letter spacing</label>
+										<rgen-select type="alone" selectdata="spacing" size="w-mini" data-ng-model="fonts.letter_spacing" ng-click="update()"></rgen-select>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="field-box">
+							<label>Style, transform and color</label>
+							<div class="fields">
+								<ul class="form-row">
+									<li>
+										<label class="lbl">Font style</label>
+										<rgen-select type="alone" selectdata="font_style" size="w-mini" label="Font style" data-ng-model="fonts.style" ng-click="update()"></rgen-select>
+									</li>
+									<li ng-show="fonts.type == 'default'">
+										<label class="lbl">Font weight</label>
+										<rgen-select type="alone" selectdata="font_weight" size="w-mini" label="Font weight" data-ng-model="fonts.weight" ng-click="update()"></rgen-select>
+									</li>
+									<li>
+										<label class="lbl">Text transform</label>
+										<rgen-select type="alone" selectdata="text_transform" size="w-mini" label="Text transform" data-ng-model="fonts.transform" ng-click="update()"></rgen-select>
+									</li>
+									<li>
+										<label class="lbl">Color</label>
+										<rgen-colorpicker type="alone" data-ng-model="fonts.color"></rgen-colorpicker>
+									</li>
+								</ul>
+							</div>
+						</div>
+						
+						<!-- <rgen-text label="Letter spacing (px)" size="w-mini" data-ng-model="fonts.letter_spacing"></rgen-text> -->
+						<!-- <rgen-colorpicker label="Font color" data-ng-model="fonts.color"></rgen-colorpicker> -->
+					</div>
+				</div>
+			</section>
+		</div>
+		
+	</div>
+	<div class="modal-footer">
+		<button class="rgen-btn mediumlight" ng-click="apply()">Apply</button>
+		<button class="rgen-btn" ng-click="cancel()">Cancel</button>
+	</div>
+</div>

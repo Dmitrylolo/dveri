@@ -1,0 +1,43 @@
+<div class="rgen-model">
+	<div class="modal-header">
+		<h3 class="modal-title">Shadow manager</h3>
+	</div>
+	<div class="modal-body">
+		<div class="rgen-form-wrp">
+			<rgen-onoff label="Status" data-ng-model="modaldata.status"></rgen-onoff>
+			<div ng-show="modaldata.status == true">
+				<rgen-radio radiodata="shadow_types" label="Inset" data-ng-model="modaldata.inset"></rgen-radio>
+				<div class="field-box">
+					<label>Horizontal length</label>
+					<div class="fields">
+						<input type="text" class="form-field inline w-tiny" data-ng-model="modaldata.hor_l"> px
+					</div>
+				</div>
+				<div class="field-box">
+					<label>Vertical length</label>
+					<div class="fields">
+						<input type="text" class="form-field inline w-tiny" data-ng-model="modaldata.ver_l"> px
+					</div>
+				</div>
+				<div class="field-box">
+					<label>Blur radius</label>
+					<div class="fields">
+						<input type="text" class="form-field inline w-tiny" data-ng-model="modaldata.blur"> px
+					</div>
+				</div>
+				<div class="field-box">
+					<label>Spread</label>
+					<div class="fields">
+						<input type="text" class="form-field inline w-tiny" data-ng-model="modaldata.spread"> px
+					</div>
+				</div>
+				<rgen-colorpicker label="Color" data-ng-model="modaldata.color"></rgen-colorpicker>
+			</div>
+		</div>
+		
+	</div>
+	<div class="modal-footer">
+		<button class="rgen-btn mediumlight" ng-click="apply()">Apply</button>
+		<button class="rgen-btn" ng-click="cancel()">Cancel</button>
+	</div>
+</div>

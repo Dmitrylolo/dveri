@@ -1,0 +1,24 @@
+<section class="rgen-panel dark">
+	<div class="panel-container">
+		<div class="rgen-form-wrp form-full {{frmsizeCls}}">
+			<div class="field-box">
+				<label class="fs16">
+					{{lbl}}
+					<div class="help-text">Do not forgot <strong>click on SAVE</strong> button to apply changes</div>
+				</label>
+				<div class="fields">
+					<ul class="form-row">
+						<li ng-if="statusConfig == 1">
+							<label class="lbl">Status</label>
+							<rgen-onoff type="alone" data-ng-model="ngModel" ng-click="setval(ngModel)"></rgen-onoff>
+						</li>
+						<li>
+							<label class="lbl">Reset</label><br>
+							<a class="rgen-btn highlighted mini" ng-click="resetfn()">Reset settings</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

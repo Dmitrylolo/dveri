@@ -1,0 +1,4 @@
+{
+	"layout_header"      : "../rgen/admin/template/layout/layout_header.tpl",
+	"layout_footer"      : "../rgen/admin/template/layout/layout_footer.tpl"
+}

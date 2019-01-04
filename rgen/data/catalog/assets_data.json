@@ -1,0 +1,32 @@
+{
+	"css": {
+		
+		"gfont"         : "//fonts.googleapis.com/css?family=Lato:400,700,900,300italic,400italic,700italic,900italic&subset=latin,latin-ext",
+		
+		"animate"       : "catalog/view/theme/rgen-opencart/stylesheet/animate.css",
+		"bootstrap"     : "rgen/lib/bootstrap-3.2.0/css/bootstrap.min.css",
+		"fontawesome"   : "rgen/lib/font-awesome-4.2.0/css/font-awesome.min.css",
+		"PNotify"       : "rgen/lib/PNotify/pnotify.custom.min.css",
+		"owlcarousel"   : "rgen/lib/owl.carousel/owl.carousel.css",
+		"magnificpopup" : "catalog/view/javascript/jquery/magnific/magnific-popup.css",
+		
+		"menu"          : "catalog/view/theme/rgen-opencart/stylesheet/rgen-menu.css",
+		"rgengrids"     : "catalog/view/theme/rgen-opencart/stylesheet/rgen-grids.css",
+		"main"          : "catalog/view/theme/rgen-opencart/stylesheet/stylesheet.css",
+		"grids"         : "catalog/view/theme/rgen-opencart/stylesheet/grids.css",
+		"components"    : "catalog/view/theme/rgen-opencart/stylesheet/components.css"
+	},
+	"js": {
+		"jquery"        : "rgen/lib/jquery/jquery-2.1.3.min.js",
+		"owlcarousel"   : "rgen/lib/owl.carousel/owl.carousel.min.js",
+		"countdown"     : "rgen/lib/countdown/jquery.countdown.min.js",
+		"imgzoom"	    : "rgen/lib/elevatezoom/jquery.elevatezoom.js",
+		"magnificpopup" : "catalog/view/javascript/jquery/magnific/jquery.magnific-popup.min.js",
+		"jqueryui"	    : "catalog/view/javascript/mf/jquery-ui.min.js",
+		"bootstrap"     : "rgen/lib/bootstrap-3.2.0/js/bootstrap.min.js",
+		"PNotify"       : "rgen/lib/PNotify/pnotify.custom.min.js",
+		"autocomplete"  : "rgen/lib/jQuery-Autocomplete/jquery.autocomplete.min.js",
+		"menu"          : "catalog/view/theme/rgen-opencart/js/rgen-menu.js",
+		"common"        : "catalog/view/theme/rgen-opencart/js/common.js"
+	}
+}

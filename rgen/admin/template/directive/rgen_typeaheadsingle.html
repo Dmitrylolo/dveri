@@ -1,0 +1,24 @@
+<div class="field-box">
+	<label>
+		{{label}}
+		<div class="help-text" ng-show="lhelp">{{lhelp}}</div>
+	</label>
+	<div class="fields">
+		<div class="typeahead-wrp">
+			<div class="rgen-addon">
+				<input 
+					type="text" 
+					class="form-field{{size ? ' '+size : ' w-medium'}}" 
+					placeholder="{{pholder ? pholder : ''}}" 
+					data-ng-model="typeaheadData"
+					typeahead="item as item.name for item in getData(searchtype, $viewValue)" 
+					typeahead-loading="loadingLocations" 
+					typeahead-on-select="onSelect($item, $model, $label, searchtype)">
+				<span ng-show="loadingLocations" class="addon" style="font-size: 20px;"><i class="glyphicon glyphicon-refresh"></i></span>
+			</div>
+			
+		</div>
+		
+		<div class="help-text" ng-show="fhelp">{{fhelp}}</div>
+	</div>
+</div>

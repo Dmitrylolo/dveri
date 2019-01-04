@@ -1,0 +1,84 @@
+<div class="rgen-model">
+	<div class="modal-header">
+		<h3 class="modal-title">Small product box 2</h3>
+	</div>
+	<div class="modal-body">
+		<div class="rgen-form-wrp">
+			<rgen-onoff label="Status" data-ng-model="modaldata.status"></rgen-onoff>
+			<div ng-if="modaldata.status == true">
+				<div class="field-box">
+					<label>Product block</label>
+					<div class="fields">
+						<ul class="form-row">
+							<li>
+								<label class="lbl">Normal</label>
+								<rgen-box type="alone" config="{fonts:0}" buttonlabel="Edit" data-ng-model="modaldata.prd.block.normal"></rgen-box>
+							</li>
+							<li>
+								<label class="lbl">Hover</label>
+								<rgen-box type="alone" config="{fonts:0}" buttonlabel="Edit" data-ng-model="modaldata.prd.block.hover"></rgen-box>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<rgen-box label="Product image" config="{fonts:0}" buttonlabel="Edit" data-ng-model="modaldata.prd.image"></rgen-box>
+				
+				<div class="field-box">
+					<label>Product name</label>
+					<div class="fields">
+						<ul class="form-row">
+							<li>
+								<label class="lbl">Name</label>
+								<rgen-box type="alone" config="{align:1, f_size:1, color:1, bg:0}" buttonlabel="Edit" data-ng-model="modaldata.prd.prdname"></rgen-box>
+							</li>
+							<li>
+								<label class="lbl">Name hover</label>
+								<rgen-colorpicker type="alone" data-ng-model="modaldata.prd.prdname_hover"></rgen-colorpicker>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="field-box">
+					<label>Product price</label>
+					<div class="fields">
+						<ul class="form-row">
+							<li>
+								<label class="lbl">Block</label>
+								<rgen-box type="alone" config="{fonts:0, align:1, bg:0, shadow:0}" buttonlabel="Edit" data-ng-model="modaldata.prd.price_block"></rgen-box>
+							</li>
+							<li>
+								<label class="lbl">Special</label>
+								<rgen-colorpicker type="alone" data-ng-model="modaldata.prd.price_spl"></rgen-colorpicker>
+							</li>
+							<li>
+								<label class="lbl">Normal</label>
+								<rgen-colorpicker type="alone" data-ng-model="modaldata.prd.price_new"></rgen-colorpicker>
+							</li>
+							<li>
+								<label class="lbl">Old</label>
+								<rgen-colorpicker type="alone" data-ng-model="modaldata.prd.price_old"></rgen-colorpicker>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="field-box">
+					<label>Product buttons</label>
+					<div class="fields">
+						<ul class="form-row">
+							<li>
+								<label class="lbl">Arrow button</label>
+								<rgen-button type="alone" buttonlabel="Edit" data-ng-model="modaldata.prd.btn"></rgen-button>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<button class="rgen-btn mediumlight" ng-click="apply()">Apply</button>
+		<button class="rgen-btn" ng-click="cancel()">Cancel</button>
+	</div>
+</div>

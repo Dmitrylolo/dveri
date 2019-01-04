@@ -1,0 +1,38 @@
+<div class="rgen-model">
+	<div class="modal-header">
+		<h3 class="modal-title">Grid settings</h3>
+	</div>
+	<div class="modal-body">
+		<section class="rgen-panel">
+			<h2 class="hd">
+				Grid settings
+				<div class="help-text">Grid settings based on equal grid concept. Example: if 4 selected than 4 column grid generate</div>
+			</h2>
+			<div class="panel-container">
+				<div class="rgen-form-wrp form-full">
+					<rgen-radio radiodata="lg_desktop_size" size="mini" lhelp="Screen resolution : 1200px+" label="Large screens" data-ng-model="modaldata.lg_desktop"></rgen-radio>
+					
+					<rgen-radio radiodata="desktop_size" size="mini" lhelp="Screen resolution : 980px to 1199px" label="Medium screens" data-ng-model="modaldata.desktop"></rgen-radio>
+
+					<rgen-radio radiodata="tablet_size" size="mini" lhelp="Screen resolution : 768px to 979px" label="Tablet screens" data-ng-model="modaldata.tablet"></rgen-radio>
+					
+					<rgen-radio radiodata="mob_xl_size" size="mini" lhelp="Screen resolution : 600px to 767px" label="Mobile large screens" data-ng-model="modaldata.mob_xl"></rgen-radio>
+					
+					<rgen-radio radiodata="mob_sm_size" size="mini" lhelp="Screen resolution : 480px to 599px" label="Mobile medium screens" data-ng-model="modaldata.mob_sm"></rgen-radio>
+					
+					<rgen-radio radiodata="mob_xs_size" size="mini" lhelp="Screen resolution : 320px to 479px" label="Mobile small screens" data-ng-model="modaldata.mob_xs"></rgen-radio>
+
+					<h3 class="rgen-hd-1">Other settings</h3>
+					<rgen-radio radiodata="gutter" size="mini" fhelp="Space between to columns" label="Column gutter" data-ng-model="modaldata.gutter"></rgen-radio>
+					<rgen-radio radiodata="margin_b" size="mini" fhelp="Bottom margin of columns" label="Bottom margin" data-ng-model="modaldata.margin_b"></rgen-radio>
+				</div>
+			</div>
+		</section>
+		
+		
+	</div>
+	<div class="modal-footer">
+		<button class="rgen-btn mediumlight" ng-click="apply()">Apply</button>
+		<button class="rgen-btn" ng-click="cancel()">Cancel</button>
+	</div>
+</div>

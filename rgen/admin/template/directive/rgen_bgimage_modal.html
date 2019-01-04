@@ -1,0 +1,38 @@
+<div class="rgen-model">
+	<div class="modal-header">
+		<h3 class="modal-title">Background manager</h3>
+	</div>
+	<div class="modal-body">
+		<div class="rgen-form-wrp">
+			<rgen-onoff label="Image status" data-ng-model="modaldata.status"></rgen-onoff>
+			<div ng-show="modaldata.status == true">
+				<rgen-imgupload label="Image upload" data-ng-model="modaldata.image"></rgen-imgupload>
+				<rgen-select selectdata="position" label="Background position" data-ng-model="modaldata.position"></rgen-select>
+
+				<div class="field-box" ng-show="modaldata.position == 'xy'">
+					<label></label>
+					<div class="fields">
+						<input type="text" class="form-field w-tiny inline" data-ng-model="modaldata.position_x">
+						<input type="text" class="form-field w-tiny inline" data-ng-model="modaldata.position_y">
+						<div class="help-text">X-position - Y-position</div>
+					</div>
+				</div>
+				<rgen-select selectdata="repeat" label="Background repeat" data-ng-model="modaldata.repeat"></rgen-select>
+				<rgen-select selectdata="attachment" label="Background attachment" data-ng-model="modaldata.attachment"></rgen-select>
+				<rgen-select selectdata="bgsize" label="Background size" data-ng-model="modaldata.bgsize"></rgen-select>
+				<div class="field-box" ng-show="modaldata.bgsize == 'wh'">
+					<label></label>
+					<div class="fields">
+						<input type="text" class="form-field w-mini inline" data-ng-model="modaldata.bgsize_w">
+						<input type="text" class="form-field w-mini inline" data-ng-model="modaldata.bgsize_h">
+						<div class="help-text">Width(px) - Height(px) / Width(%) - Height(%)</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<button class="rgen-btn mediumlight" ng-click="apply()">Apply</button>
+		<button class="rgen-btn" ng-click="cancel()">Cancel</button>
+	</div>
+</div>

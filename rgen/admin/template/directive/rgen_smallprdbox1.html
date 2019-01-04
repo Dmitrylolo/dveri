@@ -1,0 +1,12 @@
+<div class="field-box">
+	<label ng-class="helpimg ? 'tip' : null">
+		{{label}}
+		<div class="help-text" ng-show="lhelp">{{lhelp}}</div>
+		<a ng-if="helpimg" ng-click="helpImg(helpimg)" class="help-tip"><i class="fa fa-question-circle"></i></a>
+	</label>
+	<div class="fields">
+		<button class="rgen-btn small" ng-click="open()">{{buttonlabel}}</button>
+		<input type="hidden" data-ng-model="ngModel">
+		<div class="help-text" ng-show="fhelp">{{fhelp}}</div>
+	</div>
+</div>

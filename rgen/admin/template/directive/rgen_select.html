@@ -1,0 +1,14 @@
+<div class="field-box{{classname ? ' '+classname : ''}}">
+	<label ng-class="helpimg ? 'tip' : null">
+		{{label}}
+		<div class="help-text" ng-show="lhelp">{{lhelp}}</div>
+		<a ng-if="helpimg" ng-click="helpImg(helpimg)" class="help-tip"><i class="fa fa-question-circle"></i></a>
+	</label>
+	<div class="fields">
+		<span class="select inline{{size ? ' '+size : ' w-small'}}">
+			<select ng-model="ngModel" ng-options="o.val as o.name for o in selectdata" ng-change="fn"></select>
+		</span>
+		<div class="help-text" ng-show="fhelp">{{fhelp}}</div>
+	</div>
+</div>
+

@@ -1,0 +1,36 @@
+
+			.mfilter-counter {
+				background: #449d44;
+				color: #ffffff;
+			}
+			.mfilter-counter:after {
+				border-right-color: #449d44;
+			}
+		.mfilter-content {border: 1px solid #398439;}
+.box-heading {padding-top:11px;}
+				.mfilter-search #mfilter-opts-search_button {
+					background-color: #449d44;
+				}
+			
+				.mfilter-slider-slider .ui-slider-range,
+				#mfilter-price-slider .ui-slider-range {
+					background: #449d44 !important;
+				}
+			
+				.mfilter-heading {
+					background: #ededed;
+				}
+			
+				.mfilter-heading {
+					color: #000000;
+				}
+			
+				.mfilter-opts-container {
+					border-top-color: #398439;
+				}
+			
+				.mfilter-free-button {
+					background-color: #449d44;
+					border-color: #449d44;
+				}
+			

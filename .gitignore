@@ -1,0 +1,13 @@
+$ cat .gitignore
+config.php
+config~.php
+sftp-config.json
+sftp-config-alt.json
+yandex_06c366bf842e4872.html
+googleea0ea97936f98573.html
+googlebdb3eb606aa0ca93.html
+error_log
+_notes
+php.ini
+test_ioncube.php
+/image

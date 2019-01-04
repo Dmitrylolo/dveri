@@ -1,0 +1,133 @@
+# 1.To use URL Alias you need to be running apache with mod_rewrite enabled. 
+
+# 2. In your opencart directory rename htaccess.txt to .htaccess.
+
+# For any support issues please visit: http://www.opencart.com
+
+Options +FollowSymlinks
+
+# Prevent Directoy listing 
+Options -Indexes
+
+# Prevent Direct Access to files
+<FilesMatch "(?i)((\.tpl|\.ini|\.log|(?<!robots)\.txt))">
+ Order deny,allow
+ Deny from all
+</FilesMatch>
+
+# SEO URL Settings
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.mg-dveri\.com.ua$ [NC]
+RewriteRule ^(.*)$ http://mg-dveri.com.ua/$1 [R=301,L]
+# If your opencart installation does not run on the main web folder make sure you folder it does run in ie. / becomes /shop/ 
+
+RewriteBase /
+RewriteCond %{REQUEST_URI} ^/services$
+RewriteRule ^.*$ /uslugi-zamera-i-ustanovki.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/wherebuy$
+RewriteRule ^.*$ /dostavka-i-oplata.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manufacturer/abloy.html$
+RewriteRule ^.*$ /abloj-abloy.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manufacturer/artdoor.html$
+RewriteRule ^.*$ /art-dor-art-door.html.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manufacturer/belwooddoors.html$
+RewriteRule ^.*$ /bellvuddors-belwooddoors.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manufacturer/vhodnie-dveri-berez.html$
+RewriteRule ^.*$ /berez-berez.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manufacturer/bas-ip-domofoni.html$
+RewriteRule ^.*$ /bes-ajpi-bas-ip.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manufacturer/brama.html$
+RewriteRule ^.*$ /brama-brama.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manufacturer/vudok.html$
+RewriteRule ^.*$ /vudok-woodok.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manufacturer/dveri-woodtechnic.html$
+RewriteRule ^.*$ /vudtehnik-woodtechnis.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manufacturer/agb.html$
+RewriteRule ^.*$ /ej-dzhi-bi-agb.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manufacturer/interior-doors.html$
+RewriteRule ^.*$ /inter-ernye-dveri-interior-doors.html.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manufacturer/kofrad.html$
+RewriteRule ^.*$ /korfad-korfad.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manufacturer/manital.html$
+RewriteRule ^.*$ /manital-manital.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manufacturer/mvm.html$
+RewriteRule ^.*$ /mvm-mvm.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manufacturer/mechanic-group.html$
+RewriteRule ^.*$ /mehanik-grupp-mechanic-group.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manufacturer/milano.html$
+RewriteRule ^.*$ /milano-milano.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manufacturer/mul-t-lock.html$
+RewriteRule ^.*$ /mul-tilok-mul-t-lock.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manufacturer/neman.html$
+RewriteRule ^.*$ /neman-neman.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manufacturer/ninz.html$
+RewriteRule ^.*$ /ninc-ninz.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manufacturer/nsd.html$
+RewriteRule ^.*$ /nsd-nsd.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manufacturer/oronoro.html$
+RewriteRule ^.*$ /oro-oro-oro-oro.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manufacturer/system.html$
+RewriteRule ^.*$ /sistem-system.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manufacturer/portala.html$
+RewriteRule ^.*$ /portala-portala.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manufacturer/videodomofoni-slinex.html$
+RewriteRule ^.*$ /slineks-slinex.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manufacturer/steelguard.html$
+RewriteRule ^.*$ http://mg-dveri.com.ua/stilgard-steelguard.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manufacturer/vhodnie-dveri-strazh.html$
+RewriteRule ^.*$ /strazh-straj.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manufacturer/strimex.html$
+RewriteRule ^.*$ /strimeks-strimex.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manufacturer/terminus.html$
+RewriteRule ^.*$ /terminus-terminus.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manufacturer/fado.html$
+RewriteRule ^.*$ /fado-fado.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manufacturer/vhodnie-dveri-fort.html$
+RewriteRule ^.*$ /fort-fort.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manufacturer/hales.html$
+RewriteRule ^.*$ /hales-hales.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manufacturer/usk.html$
+RewriteRule ^.*$ /yusk-usk.html? [R=301,L]
+
+
+RewriteRule ^catalog/([^/]+).html$ $1 [L]
+RewriteRule ^catalog/([^/]+)/page([^/]+).html$ $1/?page=$2 [L]
+RewriteRule ^doors/([^/]+).html$ $1 [L]
+RewriteRule ^manufacturer/([^/]+).html$ $1 [L]
+RewriteRule ^manufacturer/([^/]+)/page([^/]+).html$ $1/?page=$2 [L]
+RewriteRule ^manufacturers$ index.php?route=product/manufacturer [L]
+RewriteRule ^manufacturer$ index.php?route=product/manufacturer [L]
+RewriteRule ^sitemap.xml$ index.php?route=feed/ocj_google_sitemap [L]
+RewriteRule ^googlebase.xml$ index.php?route=feed/google_base [L]
+RewriteRule ^download/(.*) /index.php?route=error/not_found [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !.*\.(ico|gif|jpg|jpeg|png|js|css)
+RewriteRule ^([^?]*) index.php?_route_=$1 [L,QSA]
+
+
+
+### Additional Settings that may need to be enabled for some servers 
+### Uncomment the commands by removing the # sign in front of it.
+### If you get an "Internal Server Error 500" after enabling any of the following settings, restore the # as this means your host doesn't allow that.
+
+# 1. If your cart only allows you to add one item at a time, it is possible register_globals is on. This may work to disable it:
+# php_flag register_globals off
+
+# 2. If your cart has magic quotes enabled, This may work to disable it:
+# php_flag magic_quotes_gpc Off
+
+# 3. Set max upload file size. Most hosts will limit this and not allow it to be overridden but you can try
+# php_value upload_max_filesize 999M
+
+# 4. set max post size. uncomment this line if you have a lot of product options or are getting errors where forms are not saving all fields
+# php_value post_max_size 999M
+
+# 5. set max time script can take. uncomment this line if you have a lot of product options or are getting errors where forms are not saving all fields
+# php_value max_execution_time 200
+
+# 6. set max time for input to be recieved. Uncomment this line if you have a lot of product options or are getting errors where forms are not saving all fields
+# php_value max_input_time 200
+
+# 7. disable open_basedir limitations
+# php_admin_value open_basedir none

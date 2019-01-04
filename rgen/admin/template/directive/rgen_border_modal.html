@@ -1,0 +1,127 @@
+<div class="rgen-model">
+	<div class="modal-header">
+		<h3 class="modal-title">Border manager</h3>
+	</div>
+	<div class="modal-body">
+		<div class="rgen-form-wrp">
+			<rgen-onoff label="Status" data-ng-model="modaldata.status"></rgen-onoff>
+			<div ng-show="modaldata.status == true">
+				<rgen-radio radiodata="style_types" label="Border style" data-ng-model="modaldata.style"></rgen-radio>
+				
+				<rgen-radio radiodata="size_types" label="Border size" data-ng-model="modaldata.size"></rgen-radio>
+				<div class="field-box" ng-show="modaldata.size == 'all'">
+					<label></label>
+					<div class="fields">
+						<ul class="form-row">
+							<li>
+								<label class="lbl">Common size</label>
+								<input type="text" class="form-field w-tiny" data-ng-model="modaldata.size_all">
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="field-box" ng-show="modaldata.size == 'dif'">
+					<label></label>
+					<div class="fields">
+						<ul class="form-row">
+							<li>
+								<label class="lbl">Top</label>
+								<input type="text" class="form-field w-tiny" data-ng-model="modaldata.size_t">
+							</li>
+							<li>
+								<label class="lbl">Right</label>
+								<input type="text" class="form-field w-tiny" data-ng-model="modaldata.size_r">
+							</li>
+							<li>
+								<label class="lbl">Bottom</label>
+								<input type="text" class="form-field w-tiny" data-ng-model="modaldata.size_b">
+							</li>
+							<li>
+								<label class="lbl">Left</label>
+								<input type="text" class="form-field w-tiny" data-ng-model="modaldata.size_l">
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<rgen-radio radiodata="color_types" label="Border color" data-ng-model="modaldata.color_type"></rgen-radio>
+				<div class="field-box" ng-show="modaldata.color_type == 'all'">
+					<label></label>
+					<div class="fields">
+						<ul class="form-row">
+							<li>
+								<label class="lbl">Common color</label>
+								<rgen-colorpicker type="alone" label="Border color" data-ng-model="modaldata.color"></rgen-colorpicker>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="field-box" ng-show="modaldata.color_type == 'dif'">
+					<label></label>
+					<div class="fields">
+						<ul class="form-row">
+							<li>
+								<label class="lbl">Top</label>
+								<rgen-colorpicker type="alone" data-ng-model="modaldata.color_t"></rgen-colorpicker>
+							</li>
+							<li>
+								<label class="lbl">Right</label>
+								<rgen-colorpicker type="alone" data-ng-model="modaldata.color_r"></rgen-colorpicker>
+							</li>
+							<li>
+								<label class="lbl">Bottom</label>
+								<rgen-colorpicker type="alone" data-ng-model="modaldata.color_b"></rgen-colorpicker>
+							</li>
+							<li>
+								<label class="lbl">Left</label>
+								<rgen-colorpicker type="alone" data-ng-model="modaldata.color_l"></rgen-colorpicker>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<rgen-radio radiodata="radius_types" label="Border radius" data-ng-model="modaldata.radius"></rgen-radio>
+				<div class="field-box" ng-show="modaldata.radius == 'all'">
+					<label></label>
+					<div class="fields">
+						<ul class="form-row">
+							<li>
+								<label class="lbl">Common radius</label>
+								<input type="text" class="form-field w-tiny" data-ng-model="modaldata.radius_all">
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="field-box" ng-show="modaldata.radius == 'dif'">
+					<label></label>
+					<div class="fields">
+						<ul class="form-row">
+							<li>
+								<label class="lbl">Left Top</label>
+								<input type="text" class="form-field w-tiny" data-ng-model="modaldata.radius_t">
+							</li>
+							<li>
+								<label class="lbl">Right Top</label>
+								<input type="text" class="form-field w-tiny" data-ng-model="modaldata.radius_r">
+							</li>
+							<li>
+								<label class="lbl">Right Bottom</label>
+								<input type="text" class="form-field w-tiny" data-ng-model="modaldata.radius_b">
+							</li>
+							<li>
+								<label class="lbl">Left Bottom</label>
+								<input type="text" class="form-field w-tiny" data-ng-model="modaldata.radius_l">
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+	</div>
+	<div class="modal-footer">
+		<button class="rgen-btn mediumlight" ng-click="apply()">Apply</button>
+		<button class="rgen-btn" ng-click="cancel()">Cancel</button>
+	</div>
+</div>

@@ -1,0 +1,70 @@
+<div class="rgen-model icon-manager">
+	<div class="modal-header">
+		<h3 class="modal-title">Icon manager</h3>
+	</div>
+	<div class="modal-body">
+		<div class="rgen-form-wrp">
+			<rgen-onoff label="Status" data-ng-model="modaldata.status"></rgen-onoff>
+			<div ng-show="modaldata.status == true">
+				<rgen-radio ng-if="config.typebtn == 1" radiodata="icon_types" label="Icon type" data-ng-model="modaldata.type"></rgen-radio>
+
+				<!-- Vector icons -->
+				<div data-ng-show="modaldata.type == 'ico'">
+					<div class="field-box">
+						<label style="vertical-align: top;">
+							Icon
+							<div ng-show="selected != ''">
+								<div class="icon-preview {{selected}}"></div>
+								<div class="icon-name">{{selected}}</div>
+								<div class="help-text" style="text-align: center;">Selected icon preview</div>	
+							</div>
+						</label>
+						<div class="fields">
+							<span class="filter-input">
+								<i class="fa fa-times-circle" data-ng-show="search.class != ''" data-ng-click="filter_reset()"></i>
+								<input type="text" class="form-field mr10-b w-full" placeholder="Enter name to filter icons" data-ng-model="search.class">
+							</span>
+							<div class="icon-container">
+								<span ng-repeat="icon in icondata | filter:search" ng-click='select(icon.class)' ng-class="{active: isActive(icon.class)}"><i class="{{icon.class}}"></i></span>
+							</div>
+							<div class="help-text">
+								All icons by 
+								<a href="http://fortawesome.github.io/Font-Awesome/icons/" class="link" target="_blank">Font Awesome Icons</a>, 
+								<a href="http://getbootstrap.com/components/" class="link" target="_blank">Bootstrap Icons</a>
+							</div>
+						</div>
+					</div>
+					<rgen-select ng-if="config.size == 1" selectdata="icon_size" size="w-mini" label="Icon size" data-ng-model="modaldata.size"></rgen-select>
+					<rgen-colorpicker ng-if="config.color == 1" label="Icon color" data-ng-model="modaldata.color"></rgen-colorpicker>
+				</div>
+				
+				<!-- Image icons -->
+				<div data-ng-show="modaldata.type == 'img'">
+					<rgen-imgupload label="Image upload" data-ng-model="modaldata.image"></rgen-imgupload>
+					<rgen-select selectdata="bgsize" label="Background size" data-ng-model="modaldata.bgsize"></rgen-select>
+					<div class="field-box" ng-show="modaldata.bgsize == 'wh'">
+						<label></label>
+						<div class="fields">
+							<input type="text" class="form-field w-mini inline" data-ng-model="modaldata.bgsize_w">
+							<input type="text" class="form-field w-mini inline" data-ng-model="modaldata.bgsize_h">
+							<div class="help-text">Width(px) - Height(px) / Width(%) - Height(%)</div>
+						</div>
+					</div>
+					<div class="field-box">
+						<label>Block size</label>
+						<div class="fields">
+							<input type="text" class="form-field w-mini inline" data-ng-model="modaldata.block_w">
+							<input type="text" class="form-field w-mini inline" data-ng-model="modaldata.block_h">
+							<div class="help-text">Width(px) - Height(px)</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<div class="modal-footer">
+		<button class="rgen-btn mediumlight" ng-click="apply()">Apply</button>
+		<button class="rgen-btn" ng-click="cancel()">Cancel</button>
+	</div>
+</div>

@@ -1,0 +1,28 @@
+---------- Date: 2017-03-30 13:41:11 ~ IP : 178.158.204.148 ----------
+REQUEST URI : /index.php?route=product/search
+MOD DETAILS:
+   modFile   : /home/dveri/public_html/vqmod/xml/mega_filter.xml
+   id        : Mega Filter PRO
+   version   : 1.5.x
+   vqmver    : 2.4.0
+   author    : marsilea15@gmail.com
+
+File Name    : catalog/view/theme/*/template/product/search.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): echo $header; ?>
+----------------------------------------------------------------------
+
+
+---------- Date: 2017-03-30 17:14:09 ~ IP : 66.249.69.228 ----------
+REQUEST URI : /index.php?route=module/mega_filter/results&limit=50
+MOD DETAILS:
+   modFile   : /home/dveri/public_html/vqmod/xml/mega_filter.xml
+   id        : Mega Filter PRO
+   version   : 1.5.x
+   vqmver    : 2.4.0
+   author    : marsilea15@gmail.com
+
+File Name    : catalog/view/theme/*/template/product/special.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): echo $header; ?>
+----------------------------------------------------------------------
+
+

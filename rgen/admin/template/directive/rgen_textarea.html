@@ -1,0 +1,15 @@
+<div class="field-box">
+	<label>
+		{{label}}
+		<div class="help-text" ng-show="lhelp">{{lhelp}}</div>
+	</label>
+	<div class="fields">
+		<div class="rgen-btn-group mr5-b">
+			<a data-ng-repeat="language in languages" ng-click="lngtab(language.id)" tooltip="{{language.language}}" ng-class="{ 'active': language.id == active }" class="rgen-btn small light"><img ng-src="{{'../image/flags/'+language.image}}" alt="{{language.language}}"></a>
+		</div>
+		<div data-ng-repeat="language in languages" ng-show="language.id == active" class="lng">
+			<textarea class="form-field{{size ? ' '+size : ' w-medium'}}" data-id="{{language.id}}" data-ng-model="ngModel[language.id]" title="{{language.language}}" placeholder="{{language.language}}">{{ngModel[language.id]}}</textarea>
+		</div>
+		<div class="help-text" ng-show="fhelp">{{fhelp}}</div>
+	</div>
+</div>

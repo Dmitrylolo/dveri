@@ -1,0 +1,19 @@
+<div class="field-box">
+	<label>
+		{{label}}
+		<div class="help-text" ng-show="lhelp">{{lhelp}}</div>
+	</label>
+	<div class="fields">
+		<div class="image-upload">
+			<div class="image-holder" id="{{imgholder}}">
+				<img ng-src="{{ngModel}}" alt="" title="" data-placeholder="{{noimg}}" />
+			</div>
+			<input class="uploaded" id="{{uploaded}}" type="hidden" data-ng-model="ngModel">
+		</div>
+		<div class="image-buttons">
+			<button class="rgen-btn small mediumlight browsebtn" data-ng-click="browse()"><i></i>Browse</button>
+			<button class="rgen-btn small resetbtn" data-ng-click="reset()"><i></i>Reset</button>
+		</div>
+		<div class="help-text" ng-show="fhelp">{{fhelp}}</div>
+	</div>
+</div>

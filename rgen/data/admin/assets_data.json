@@ -1,0 +1,196 @@
+
+{
+	"css": {
+		"gfont"            : "//fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,700italic,400italic",
+		
+		"bootstrap"        : "../rgen/lib/bootstrap-3.2.0/css/bootstrap.min.css",
+		"fontawesome"      : "../rgen/lib/font-awesome-4.2.0/css/font-awesome.min.css",
+		"PNotify"          : "../rgen/lib/PNotify/pnotify.custom.min.css",
+		"bootstrapSwitch"  : "../rgen/lib/bootstrap-switch/css/bootstrap3/bootstrap-switch.min.css",
+		"bgrinsSpectrum"   : "../rgen/lib/bgrins-spectrum/spectrum.css",
+		"sweetalert"       : "../rgen/lib/sweetalert/sweet-alert.css",
+		"angularUiTreeCore": "../rgen/lib/angular-ui-tree/angular-ui-tree.css",
+		"summernote"       : "../rgen/lib/summernote/summernote.css",
+		"MagnificPopup"    : "../rgen/lib/Magnific-Popup/magnific-popup.css",
+		
+		"angularUiTree"    : "../rgen/lib/angular-ui-tree/tree.css",
+		"main"             : "../rgen/admin/css/stylesheet.css",
+		"grids"            : "../rgen/admin/css/grids.css"
+	},
+
+	"js": {
+		"jquery"                       : "../rgen/lib/jquery/jquery-1.10.2.min.js",
+		"bootstrap"                    : "../rgen/lib/bootstrap-3.2.0/js/bootstrap.min.js",
+		"bootstrapSwitch"              : "../rgen/lib/bootstrap-switch/js/bootstrap-switch.min.js",
+		"PNotify"                      : "../rgen/lib/PNotify/pnotify.custom.min.js",
+		"underscore"                   : "../rgen/lib/underscore/underscore-min.js",
+		"underscoreContrib"            : "../rgen/lib/underscore-contrib/underscore-contrib.js",
+		"bgrinsSpectrum"               : "../rgen/lib/bgrins-spectrum/spectrum.js",
+		"jqueryBlockui"                : "../rgen/lib/jquery-blockUI/jquery.blockUI.js",
+		"summernote"                   : "../rgen/lib/summernote/summernote.min.js",
+		"MagnificPopup"                : "../rgen/lib/Magnific-Popup/jquery.magnific-popup.min.js",
+
+		
+		"angularjs"                    : "../rgen/lib/angular/angular.min.js",
+		"angular_route"                : "../rgen/lib/angular/angular-route.min.js",
+		"angular_resource"             : "../rgen/lib/angular/angular-resource.min.js",
+		"angular_animate"              : "../rgen/lib/angular/angular-animate.min.js",
+		"angular_sanitize"             : "../rgen/lib/angular/angular-sanitize.min.js",
+		
+		"uiBootstrap"                  : "../rgen/lib/ui-bootstrap/ui-bootstrap-tpls-0.12.0.min.js",
+		"uiRouter"                     : "../rgen/lib/ui-router/angular-ui-router.min.js",
+		
+		"angularUiTree"                : "../rgen/lib/angular-ui-tree/angular-ui-tree.js",
+		
+		"sweetalert"                   : "../rgen/lib/sweetalert/sweet-alert.min.js",
+		"sweetalert_ng"                : "../rgen/lib/sweetalert/SweetAlert.js",
+		
+		
+		
+		"ng_app"                       : "../rgen/admin/js/rgen_app.js",
+		
+		"ng_services"                  : "../rgen/admin/js/services/rgen_services.js",
+		"ng_modprocessor"              : "../rgen/admin/js/services/rgen_modprocessor.js",
+		"ng_modmenu"                   : "../rgen/admin/js/services/rgen_mod_menu.js",
+		
+		"ng_ctrl"                      : "../rgen/admin/js/controllers/rgen_controllers.js",
+		"ng_dashboard"                 : "../rgen/admin/js/controllers/rgen_dashboard.js",
+		"ng_theme_general"             : "../rgen/admin/js/controllers/theme/rgen_theme_general.js",
+		"ng_theme_customcode"          : "../rgen/admin/js/controllers/theme/rgen_theme_customcode.js",
+		"ng_theme_commoncomponents"    : "../rgen/admin/js/controllers/theme/rgen_theme_commoncomponents.js",
+		"ng_theme_header"              : "../rgen/admin/js/controllers/theme/rgen_theme_header.js",
+		"ng_theme_headergeneral"       : "../rgen/admin/js/controllers/theme/rgen_theme_headergeneral.js",
+		"ng_theme_footer"              : "../rgen/admin/js/controllers/theme/rgen_theme_footer.js",
+		"ng_theme_prdblocks"           : "../rgen/admin/js/controllers/theme/rgen_theme_prdblocks.js",
+		"ng_theme_ocmenu"              : "../rgen/admin/js/controllers/theme/rgen_theme_ocmenu.js",
+		"ng_theme_menu"                : "../rgen/admin/js/controllers/theme/rgen_theme_menu.js",
+		"ng_theme_basicbanners"        : "../rgen/admin/js/controllers/theme/rgen_theme_basicbanners.js",
+		"ng_theme_basicslideshow"      : "../rgen/admin/js/controllers/theme/rgen_theme_basicslideshow.js",
+		"ng_theme_productgroups"       : "../rgen/admin/js/controllers/theme/rgen_theme_productgroups.js",
+		"ng_theme_customhtml"          : "../rgen/admin/js/controllers/theme/rgen_theme_customhtml.js",
+		
+		"ng_theme_page_category"       : "../rgen/admin/js/controllers/theme/rgen_theme_page_category.js",
+		"ng_theme_page_shoppingcart"   : "../rgen/admin/js/controllers/theme/rgen_theme_page_shoppingcart.js",
+		"ng_theme_page_checkout"       : "../rgen/admin/js/controllers/theme/rgen_theme_page_checkout.js",
+		"ng_theme_page_other"          : "../rgen/admin/js/controllers/theme/rgen_theme_page_other.js",
+		"ng_theme_page_product"        : "../rgen/admin/js/controllers/theme/rgen_theme_page_product.js",
+		
+		"ng_theme_ocmod_featured"      : "../rgen/admin/js/controllers/theme/rgen_theme_ocmod_featured.js",
+		"ng_theme_ocmod_latest"        : "../rgen/admin/js/controllers/theme/rgen_theme_ocmod_latest.js",
+		"ng_theme_ocmod_best"          : "../rgen/admin/js/controllers/theme/rgen_theme_ocmod_best.js",
+		"ng_theme_ocmod_special"       : "../rgen/admin/js/controllers/theme/rgen_theme_ocmod_special.js",
+		"ng_theme_ocmod_slideshow"     : "../rgen/admin/js/controllers/theme/rgen_theme_ocmod_slideshow.js",
+		"ng_theme_ocmod_cataccount"    : "../rgen/admin/js/controllers/theme/rgen_theme_ocmod_cataccount.js",
+		"ng_theme_ocmod_banners"       : "../rgen/admin/js/controllers/theme/rgen_theme_ocmod_banners.js",
+		
+		"ng_mod_menu"                  : "../rgen/admin/js/controllers/modules/rgen_mod_menu.js",
+		"ng_mod_menu_assign"           : "../rgen/admin/js/controllers/modules/menu/rgen_mod_menu_assign.js",
+		"ng_mod_menu_modal"            : "../rgen/admin/js/controllers/modules/menu/rgen_mod_menu_modal.js",
+		"ng_mod_menu_customize"        : "../rgen/admin/js/controllers/modules/menu/customize.js",
+		
+		"ng_mod_basicslideshow"        : "../rgen/admin/js/controllers/modules/rgen_mod_basicslideshow.js",
+		"ng_mod_basicslideshow_assign" : "../rgen/admin/js/controllers/modules/basicslideshow/assign.js",
+		"ng_mod_basicslideshow_modal"  : "../rgen/admin/js/controllers/modules/basicslideshow/modal.js",
+		"ng_mod_basicslideshow_customize"  : "../rgen/admin/js/controllers/modules/basicslideshow/customize.js",
+		
+		"ng_mod_basicbanners"          : "../rgen/admin/js/controllers/modules/rgen_mod_basicbanners.js",
+		"ng_mod_basicbanners_assign"   : "../rgen/admin/js/controllers/modules/basicbanners/assign.js",
+		"ng_mod_basicbanners_modal"    : "../rgen/admin/js/controllers/modules/basicbanners/modal.js",
+		"ng_mod_basicbanners_customize"    : "../rgen/admin/js/controllers/modules/basicbanners/customize.js",
+
+		"ng_mod_productgroups"         : "../rgen/admin/js/controllers/modules/rgen_mod_productgroups.js",
+		"ng_mod_productgroups_assign"  : "../rgen/admin/js/controllers/modules/productgroups/assign.js",
+		"ng_mod_productgroups_modal"   : "../rgen/admin/js/controllers/modules/productgroups/modal.js",
+		"ng_mod_productgroups_customize"   : "../rgen/admin/js/controllers/modules/productgroups/customize.js",
+
+		"ng_mod_customhtml"            : "../rgen/admin/js/controllers/modules/rgen_mod_customhtml.js",
+		"ng_mod_customhtml_assign"     : "../rgen/admin/js/controllers/modules/customhtml/assign.js",
+		"ng_mod_customhtml_modal"      : "../rgen/admin/js/controllers/modules/customhtml/modal.js",
+		"ng_mod_customhtml_customize"      : "../rgen/admin/js/controllers/modules/customhtml/customize.js",
+
+		"ng_mod_contentblocks"         : "../rgen/admin/js/controllers/modules/rgen_mod_contentblocks.js",
+		"ng_mod_contentblocks_assign"  : "../rgen/admin/js/controllers/modules/contentblocks/assign.js",
+		"ng_mod_contentblocks_modal"   : "../rgen/admin/js/controllers/modules/contentblocks/modal.js",
+		"ng_mod_contentblocks_customize"   : "../rgen/admin/js/controllers/modules/contentblocks/customize.js",
+
+		"ng_mod_bannergrids"         : "../rgen/admin/js/controllers/modules/rgen_mod_bannergrids.js",
+		"ng_mod_bannergrids_assign"  : "../rgen/admin/js/controllers/modules/bannergrids/assign.js",
+		"ng_mod_bannergrids_modal"   : "../rgen/admin/js/controllers/modules/bannergrids/modal.js",
+		"ng_mod_bannergrids_customize"   : "../rgen/admin/js/controllers/modules/bannergrids/customize.js",
+
+		"ng_mod_imagegallery"         : "../rgen/admin/js/controllers/modules/rgen_mod_imagegallery.js",
+		"ng_mod_imagegallery_assign"  : "../rgen/admin/js/controllers/modules/imagegallery/assign.js",
+		"ng_mod_imagegallery_modal"   : "../rgen/admin/js/controllers/modules/imagegallery/modal.js",
+		"ng_mod_imagegallery_customize"   : "../rgen/admin/js/controllers/modules/imagegallery/customize.js",
+
+		"ng_mod_revslider"            : "../rgen/admin/js/controllers/modules/rgen_mod_revslider.js",
+		"ng_mod_revslider_assign"     : "../rgen/admin/js/controllers/modules/revslider/assign.js",
+		"ng_mod_revslider_modal"      : "../rgen/admin/js/controllers/modules/revslider/modal.js",
+		"ng_mod_revslider_customize"      : "../rgen/admin/js/controllers/modules/revslider/customize.js",
+
+		"ng_mod_gridmanager"            : "../rgen/admin/js/controllers/modules/rgen_mod_gridmanager.js",
+		"ng_mod_gridmanager_assign"     : "../rgen/admin/js/controllers/modules/gridmanager/assign.js",
+		"ng_mod_gridmanager_modal"      : "../rgen/admin/js/controllers/modules/gridmanager/modal.js",
+		"ng_mod_gridmanager_customize"      : "../rgen/admin/js/controllers/modules/gridmanager/customize.js",
+
+		"ng_mod_prdpghtml"           : "../rgen/admin/js/controllers/modules/rgen_mod_prdpghtml.js",
+		"ng_mod_prdpghtml_assign"    : "../rgen/admin/js/controllers/modules/prdpghtml/assign.js",
+		"ng_mod_prdpghtml_modal"     : "../rgen/admin/js/controllers/modules/prdpghtml/modal.js",
+		"ng_mod_prdpghtml_customize" : "../rgen/admin/js/controllers/modules/prdpghtml/customize.js",
+
+		"ng_mod_prdpgtabs"           : "../rgen/admin/js/controllers/modules/rgen_mod_prdpgtabs.js",
+		"ng_mod_prdpgtabs_assign"    : "../rgen/admin/js/controllers/modules/prdpgtabs/assign.js",
+		"ng_mod_prdpgtabs_modal"     : "../rgen/admin/js/controllers/modules/prdpgtabs/modal.js",
+
+		"ng_mod_stickyhtml"            : "../rgen/admin/js/controllers/modules/rgen_mod_stickyhtml.js",
+		"ng_mod_stickyhtml_assign"     : "../rgen/admin/js/controllers/modules/stickyhtml/assign.js",
+		"ng_mod_stickyhtml_modal"      : "../rgen/admin/js/controllers/modules/stickyhtml/modal.js",
+		"ng_mod_stickyhtml_customize"  : "../rgen/admin/js/controllers/modules/stickyhtml/customize.js",
+
+		"ng_mod_catshowcase"            : "../rgen/admin/js/controllers/modules/rgen_mod_catshowcase.js",
+		"ng_mod_catshowcase_assign"     : "../rgen/admin/js/controllers/modules/catshowcase/assign.js",
+		"ng_mod_catshowcase_modal"      : "../rgen/admin/js/controllers/modules/catshowcase/modal.js",
+		"ng_mod_catshowcase_customize"  : "../rgen/admin/js/controllers/modules/catshowcase/customize.js",
+
+		"ng_mod_deals"                  : "../rgen/admin/js/controllers/modules/rgen_mod_deals.js",
+		"ng_mod_deals_assign"           : "../rgen/admin/js/controllers/modules/deals/assign.js",
+		"ng_mod_deals_modal"            : "../rgen/admin/js/controllers/modules/deals/modal.js",
+		"ng_mod_deals_customize"        : "../rgen/admin/js/controllers/modules/deals/customize.js",
+		
+		"ng_sys_backuprestore"         : "../rgen/admin/js/controllers/system/backuprestore.js",
+		"ng_sys_optimization"          : "../rgen/admin/js/controllers/system/optimization.js",
+
+		"ng_directives"                : "../rgen/admin/js/directives/rgen_directives.js",
+		"ng_text"                      : "../rgen/admin/js/directives/rgen_text.js",
+		"ng_reset"                     : "../rgen/admin/js/directives/rgen_reset.js",
+		"ng_textarea"                  : "../rgen/admin/js/directives/rgen_textarea.js",
+		"ng_onoff"                     : "../rgen/admin/js/directives/rgen_onoff.js",
+		"ng_radio"                     : "../rgen/admin/js/directives/rgen_radio.js",
+		"ng_colorpicker"               : "../rgen/admin/js/directives/rgen_colorpicker.js",
+		"ng_bgimage"                   : "../rgen/admin/js/directives/rgen_bgimage.js",
+		"ng_imgupload"                 : "../rgen/admin/js/directives/rgen_imgupload.js",
+		"ng_select"                    : "../rgen/admin/js/directives/rgen_select.js",
+		"ng_fonts"                     : "../rgen/admin/js/directives/rgen_fonts.js",
+		"ng_themestorage"              : "../rgen/admin/js/directives/rgen_themestorage.js",
+		"ng_border"                    : "../rgen/admin/js/directives/rgen_border.js",
+		"ng_shadow"                    : "../rgen/admin/js/directives/rgen_shadow.js",
+		"ng_icons"                     : "../rgen/admin/js/directives/rgen_icons.js",
+		"ng_margin"                    : "../rgen/admin/js/directives/rgen_margin.js",
+		"ng_padding"                   : "../rgen/admin/js/directives/rgen_padding.js",
+		"ng_langtext"                  : "../rgen/admin/js/directives/rgen_langtext.js",
+		"ng_langcontent"               : "../rgen/admin/js/directives/rgen_langcontent.js",
+		"ng_typeahead"                 : "../rgen/admin/js/directives/rgen_typeahead.js",
+		"ng_typeaheadsingle"           : "../rgen/admin/js/directives/rgen_typeaheadsingle.js",
+		"ng_grids"                     : "../rgen/admin/js/directives/rgen_grids.js",
+		"ng_scrollitems"               : "../rgen/admin/js/directives/rgen_scrollitems.js",
+		"ng_button"                    : "../rgen/admin/js/directives/rgen_button.js",
+		"ng_box"                       : "../rgen/admin/js/directives/rgen_box.js",
+		
+		"ng_prdbox1"                   : "../rgen/admin/js/directives/rgen_prdbox1.js",
+		"ng_prdbox2"                   : "../rgen/admin/js/directives/rgen_prdbox2.js",
+		"ng_prdbox3"                   : "../rgen/admin/js/directives/rgen_prdbox3.js",
+		"ng_prdbox4"                   : "../rgen/admin/js/directives/rgen_prdbox4.js",
+		"ng_smallprdbox1"              : "../rgen/admin/js/directives/rgen_smallprdbox1.js",
+		"ng_smallprdbox2"              : "../rgen/admin/js/directives/rgen_smallprdbox2.js"
+	}
+}

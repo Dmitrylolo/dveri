@@ -1,0 +1,8 @@
+<div>
+	<!-- <div class="rgen-btn-group" data-value="{{ngModel.val || 'null'}}" data-ng-click="selected = newdataModel.val">
+	<label type="radio" data-ng-repeat="data in newdata" ng-class="size ? 'rgen-btn '+size : 'rgen-btn small'" data-ng-model="newdataModel.val" btn-radio="data.val">{{data.label}}</label>
+	</div> -->
+	<div class="rgen-btn-group">
+		<label type="radio" ng-mousedown="setradio(data.val)" ng-click="radiofn()" data-ng-repeat="data in newdata" ng-class="size ? 'rgen-btn '+size : 'rgen-btn small'" data-ng-model="newdataModel.val" btn-radio="data.val">{{data.label}}</label>
+	</div>
+</div>

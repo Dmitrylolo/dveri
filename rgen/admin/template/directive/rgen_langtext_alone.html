@@ -1,0 +1,8 @@
+<div>
+	<div class="rgen-btn-group mr5-b">
+		<a data-ng-repeat="language in languages" tooltip="{{language.language}}" ng-click="lngtab(language.id)" ng-class="{ 'active': language.id == active }" class="rgen-btn small light"><img ng-src="{{'../image/flags/'+language.image}}" alt="{{language.language}}"></a>
+	</div>
+	<div data-ng-repeat="language in languages" ng-show="language.id == active" class="lng">
+		<input type="text" class="form-field{{size ? ' '+size : ' w-medium'}}" data-ng-model="lngdata[language.id]" placeholder="{{language.language}}">
+	</div>
+</div>
